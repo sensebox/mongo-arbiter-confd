@@ -1,0 +1,9 @@
+[template]
+src = "keyfile.tmpl"
+dest = "/etc/mongo_keyfile"
+gid = 999 # as defined in docker image
+uid = 999 # as defined in docker image
+mode = "0400"
+keys = [
+  "/mongo/keyfile"
+]
